@@ -9,16 +9,20 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.content}>
-
+        <Text style={styles.heading}>About me</Text>
+        <Header
+        name="Jagroop Khosa"
+        bio="Fourth Year Computer Science Major @ UB"
+        linkedinUrl='https://www.linkedin.com/in/jagroop-khosa-60533a2b9/'
+        image={{uri:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/1280px-Buffalo_Bulls_logo.svg.png"}}><Text>My Name Is Jagroop</Text> </Header>
         {/* use Components like View, Text, Header, Card, Higlight Card, and Like button to make your own about me page */}
-
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#fff' },
+  screen: { flex: 1, backgroundColor: 'rgba(255, 255, 255, 1)' },
 
   // Inner padding + vertical spacing between blocks
   content: {
